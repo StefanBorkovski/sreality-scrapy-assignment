@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List of top 100 Apartments from https://www.sreality.cz</title>
+</head>
+<body>
+    <h1>List of Apartments</h1>
+    {% for apartment in apartments %}
+    <div>
+        <h2>Title: {{apartment.0}}</h2>
+        <h3>Price: {{apartment.1}} EUR</h3>
+        <img src={{apartment.2}} alt={{apartment.2}}>
+        <hr>
+    </div>
+    {% endfor %}
+</body>
+</html>
